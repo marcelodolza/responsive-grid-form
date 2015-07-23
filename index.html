@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Responsive Grid Form</title>
+	<meta name="description" content="Simple draggable modal with pure Javascript, inspired by Google Modal.">
+	<meta name="author" content="Marcelo Dolce" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium">
+	<link rel="stylesheet" href="stylesheets/demo.css">
+	<link rel="stylesheet" href="stylesheets/grid.css">
+	<link rel="stylesheet" href="stylesheets/form.css">
+</head>
+<body class="">
+	<main>
+		
+<!-- GRID -->
+<section class="box shadow clearfix">
+	<header class="header">
+		<i class="icon icon-paragraph-center left"></i>
+		<h1><b>Responsive</b> grid and fields </h1>
+		<p>Example of all possible compositions of grid fields.</p>
+	</header>
+	<form action="" class="form-default">
+
+		<!-- row -->
+	   <div class="field g4">
+	        <label for="input1">Field 4/4</label>
+	        <input type="text" name="input1" id="input1" value="Hello man!">
+	    </div>
+		<!-- row -->
+	    <div class="field g2">
+	        <label for="input2">Field 2/4</label>
+	        <input type="text" name="input2" id="input2">
+	    </div>
+	    <div class="field g2">
+	        <label for="input3">Field 2/4</label>
+	        <input type="text" name="input3" id="input3">
+	    </div>
+		<!-- row -->
+	    <div class="field g13">
+	        <label for="input4">Field 1.3/4</label>
+	        <input type="text" name="input4" id="input4">
+	    </div>
+	    <div class="field g13">
+	        <label for="input5">Field 1.3/4</label>
+	        <input type="text" name="input5" id="input5">
+	    </div>
+	    <div class="field g13">
+	        <label for="input6">Field 1.3/4</label>
+	        <input type="text" name="input6" id="input6">
+	    </div>
+		<!-- row -->
+	    <div class="field g1">
+	        <label for="input7">Field 4/4</label>
+	        <input type="text" name="input7" id="input7">
+	    </div>
+	    <div class="field g2">
+	        <label for="input8">Field 2/4</label>
+	        <input type="text" name="input8" id="input8">
+	    </div>
+	    <div class="field g1">
+	        <label for="input9">Field Texto</label>
+	        <input type="text" name="input9" id="input9">
+	    </div>
+		<!-- row -->
+	    <div class="field g1">
+	        <label for="input10">Field 1/4</label>
+	        <input type="text" name="input10" id="input10">
+	    </div>
+	    <div class="field g1">
+	        <label for="input11">Field 1/4</label>
+	        <input type="text" name="input11" id="input11">
+	    </div>
+	    <div class="field g1">
+	        <label for="input12">Field 1/4</label>
+	        <input type="text" name="input12" id="input12">
+	    </div>
+	    <div class="field g1">
+	        <label for="input13">Field 1/4</label>
+	        <input type="text" name="input13" id="input13">
+	    </div>
+
+	    
+		<!-- row -->
+	    <div class="field g1">
+	        <label for="select1">Field 1/4</label>
+			<select name="select1" id="select1">
+				<option value=""></option>
+			    <option value="2">Option 1</option>
+			    <option value="3">Option 2</option>
+			    <option value="4">Option 3</option>
+			    <option value="5">Option 4</option>
+			</select>
+	    </div>
+	    <div class="field g3">
+	        <label for="input14">Field 3/4</label>
+	        <input type="text" name="input14" id="input14">
+	    </div>
+		<!-- row -->
+	    <div class="field g3">
+	        <label for="input15">Field 3/4</label>
+	        <input type="text" name="input15" id="input15">
+	    </div>
+	    <div class="field g1">
+	        <label for="select2">Field 1/4</label>
+			<select name="select2" id="select2">
+				<option value=""></option>
+			    <option value="2">Option 1</option>
+			    <option value="3">Option 2</option>
+			    <option value="4">Option 3</option>
+			    <option value="5">Option 4</option>
+			</select>
+	    </div>
+
+	</form>
+</section>
+<!-- GRID -->
+
+
+	</main>
+	<footer id="footer">
+		<!-- <p>All copyrights reserveds.</p> -->
+	</footer>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+	$(function(){
+
+		$('.field').on('focusin', 'input, select', function(event) {
+			$(this).parent().addClass('focusIn');
+		});
+
+		$('.field').on('focusout', 'input, select', function(event) {
+			if( $(this).val() == "" ){
+				$(this).parent().removeClass('focusIn');		
+			}
+		});
+
+		$.each( $('input, select') , function(index, val) {
+			if( $(this).val() != "" ){
+				$(this).parent().addClass('focusIn');		
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>

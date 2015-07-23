@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3,
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+input, textarea, select, button {font-size: 100%; font-family: inherit;}
+:focus { outline: 0;}
+
+body{
+	background: #eceff4;
+	font-family: 'Open Sans';
+}
+
+a{
+	text-decoration: none;
+}
+b{
+	font-weight: 600;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 0;
+    width: 100%;
+}
+strong{
+	font-weight: 600;
+}
+*,
+*:after,
+*::before{box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+/* ---- Clearfix ---- */
+.row:before,.row:after,.clearfix:before,.clearfix:after{content:'';display:table}
+.row:after,.clearfix:after{clear:both}
+.row,.clearfix{zoom:1}
+
+
+main{
+	padding: 80px 0 0 0;
+}
+main > header {
+	padding: 40px 40px 10px 50px;
+}
+main > header h1{
+	font-size: 21px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.5);
+	letter-spacing: -0.05em;
+	text-shadow: 0 0 2px #FFF;
+}
+main > header h1 .icon{
+	color: #49BEA4;
+}
+main{
+	padding: 20px;
+}
+
+.header{
+    padding: 10px 0 20px 10px;
+    border-radius: 3px 0 0 3px;
+}
+.header > h1{
+    font-size: 28px;
+}
+.header > p{
+	font-size: 12px;
+}
+
+.shadow{
+	box-shadow: 0 2px 1px 1px #E1E3E5;
+}
+.box{
+	background: white;
+	border-radius: 5px;
+	padding: 20px 20px 30px 20px;
+	margin: 0px 0 20px 0;
+}
+@media only screen and (min-width: 1280px) {
+    .box{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+    }
+}
+

@@ -1,0 +1,32 @@
+.row{
+    position: relative;
+    clear: both;
+}
+/** grids **/
+.g1, .g13, .g2, .g3, .g4 {
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.g1 {
+    width: calc(25% - 20px);
+}
+.g13{
+    width: calc(33.33% - 20px);   
+}
+.g2 {
+    width: calc(50% - 20px);
+}
+.g3 {
+    width: calc(75% - 20px);
+}
+.g4 {
+    width: calc(100% - 20px);
+}
+@media only screen and (max-width: 700px) {
+    .g1, .g13, .g2, .g3, .g4{
+        width: calc(100% - 20px);
+    }
+}
