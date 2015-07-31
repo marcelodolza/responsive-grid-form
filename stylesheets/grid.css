@@ -25,8 +25,64 @@
 .g4 {
     width: calc(100% - 20px);
 }
+
 @media only screen and (max-width: 700px) {
     .g1, .g13, .g2, .g3, .g4{
         width: calc(100% - 20px);
     }
+}
+@media only screen and (min-width: 700px) {
+
+    /** attachment **/
+    .g-attach-left{
+        margin-left: 0 !important;
+    }
+    .g-attach-right{
+        margin-right: 0 !important;
+    }
+
+    .g1.g-attach-left, .g1.g-attach-right {
+        width: calc(25% - 10px);
+    }
+    .g13.g-attach-left, .g13.g-attach-right{
+        width: calc(33.33% - 10px);   
+    }
+    .g2.g-attach-left, .g2.g-attach-right {
+        width: calc(50% - 10px);
+    }
+    .g3.g-attach-left, .g3.g-attach-right {
+        width: calc(75% - 10px);
+    }
+    .g4.g-attach-left, .g4.g-attach-right {
+        width: calc(100% - 10px);
+    }
+
+    .g1.g-attach-left.g1.g-attach-right {
+        width: 25%;
+    }
+    .g13.g-attach-left.g13.g-attach-right{
+        width: 33.33%;
+    }
+    .g2.g-attach-left.g2.g-attach-right {
+        width: 50%;
+    }
+    .g3.g-attach-left.g3.g-attach-right {
+        width: 75%;
+    }
+    .g4.g-attach-left.g4.g-attach-right {
+        width: 100%;
+    }
+
+    /** fix borders **/
+    .field.g-attach-left > input, .field.g-attach-left > select{
+        border-radius: 0 3px 3px 0 !important;
+    }
+    .field.g-attach-right > input, .field.g-attach-right > select{
+        border-radius: 3px 0 0 3px !important;
+        border-right: 0 !important;
+    }
+    .field.g-attach-left.g-attach-right input, .field.g-attach-left.g-attach-right select{
+        border-radius: 0 !important;
+    }
+
 }
