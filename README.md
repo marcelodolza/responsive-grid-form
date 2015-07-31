@@ -1,5 +1,5 @@
 # responsive-grid-form
-Responsive grid with the possibility of attach fields.
+Modular responsive grid with the possibility of attach fields.
 
 ___
 Above **700px**
