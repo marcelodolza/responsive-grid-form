@@ -9,14 +9,6 @@
         color: #1FB593;
     }
 
-
-.field.attached-right{
-    margin-right: 0;
-}
-.field.attached-left{
-    margin-left: 0;
-}
-
 .form-default label{
     color: #565C70;
     font-size: 13px;
